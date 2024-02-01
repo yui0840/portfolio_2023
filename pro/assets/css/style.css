@@ -1,0 +1,154 @@
+@import "https://unpkg.com/ress/dist/ress.min.css";
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  line-height: 1;
+  font-size: 1.6em;
+}
+
+
+
+
+
+header{
+  background: url(../img/proseka.png) center/cover no-repeat;
+  background-attachment: fixed;
+  height: calc(100vh - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1{
+  font-size: 4em;
+}
+
+
+
+
+
+
+.inner{
+  width: 100rem;
+  margin: auto;
+}
+
+h2{
+  width: 100%;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+
+
+
+
+
+#introduction{
+  padding: 4rem 0 8rem;
+  background: #ccc;
+}
+#introduction .inner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#introduction .left-area,
+#introduction .right-area{
+  width: 48%;
+}
+#introduction p{
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+#introduction p:nth-of-type(n + 2){
+  margin-top: 1em;
+}
+
+
+
+
+
+
+#pictures{
+  display: flex;
+}
+#pictures img{
+  object-fit: cover;
+  width: 50vw;
+  height: 50vw;
+}
+
+
+
+
+
+
+#biography{
+  background: #eee;
+  color: #444;
+  padding: 8rem 0;
+}
+#biography .inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#biography section{
+  width: 46%;
+}
+#biography section:nth-of-type(n + 3){
+  margin-top: 4rem;
+}
+#biography h2{
+  margin-bottom: 2em;
+}
+#biography h3{
+  padding-bottom: 1em;
+  border-bottom: 1px solid #444;
+  margin-bottom: 1em;
+}
+#biography ul{
+  list-style: none;
+}
+#biography li{
+  display: flex;
+  line-height: 1.5;
+}
+#biography li + li{
+  margin-top: 1em;
+}
+#biography li span{
+  margin-right: 2.5em;
+}
+
+
+
+
+
+
+footer{
+  padding: 1em 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+h2{
+  color: black;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: white;
+}
