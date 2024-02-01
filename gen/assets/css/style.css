@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import "https://unpkg.com/ress/dist/ress.min.css";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Shippori Mincho', serif;
+    color: #212121;
+}
+
+img{
+    max-width: 100%;
+}
+
+.inner{
+    width: 1000px;
+    margin: auto;
+}
+
+
+
+header{
+    background: url(../img/genshin.jpg.webp) center/cover no-repeat;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header h1,
+header .catch-copy{
+    text-align: right;
+    margin-right: 20%;
+}
+
+
+
+section{
+    width: 100%;
+    padding: 150px 0;
+}
+section h2{
+    margin-bottom: 1em;
+}
+section h2 span{
+    font-size: 1rem;
+}
+section p{
+    line-height: 1.8;
+}
+
+section#first{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+section#first .inner{
+    width: 500px;
+    margin: auto;
+}
+section#first h2{
+    font-size: 3em;
+}
+section#first h2 span{
+    display: block;
+}
+section#first p{
+    margin: 1em 0;
+}
+
+section#second h2 span, section#third h2 span{
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5em 0;
+    border-bottom: 1px solid;
+}
+section#second{
+    background: #212121;
+    color: #fff;
+    padding: 0;
+    display: flex;
+}
+section#second .text-area{
+    width: 500px;
+    margin: auto;
+}
+section#second .img-area{
+    width: 50%;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+section#second .img-area img{
+    border: 1px solid #ccc;
+}
+section#second .img-area img:nth-of-type(1){
+    width: 100%;
+}
+section#second .img-area img:nth-of-type(n + 2){
+    width: 50%;
+}
+
+section#third .img-area{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section#third ,.img-area img:nth-of-type(m + 3){
+    margin-top: 60px;
+}
+
+
+
+footer{
+    background: #212121;
+    color: #fff;
+    padding: 20px 0;
+}
